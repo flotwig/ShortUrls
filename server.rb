@@ -15,7 +15,7 @@ Short = ShortUrls.new( config[ 'db' ] )
 get '/api/new' do
 	id = Short.put( params[ 'url' ] ) 
 	if id
-		JSON.generate( { 'id'     => id.to_s(36),
+		JSON.generate( { 'id'     => id,
 		                 'status' => true } )
 	else
 		JSON.generate( { 'status' => false } )

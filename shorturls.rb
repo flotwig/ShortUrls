@@ -15,9 +15,9 @@ class ShortUrls
 		# check to see if it already exists in db to prevent dupes
 		result = @urls[ :url => Base64.encode64( url ) ]
 		if result
-			return result[ :id ]
+			return result[ :id ].to_s(36)
 		else # create new record
-			return @urls.insert( :url => Base64.encode64( url ) )
+			return @urls.insert( :url => Base64.encode64( url ) ).to_s(36)
 		end
 	end
 	def get( short )
