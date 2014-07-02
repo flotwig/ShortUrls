@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>nsf.works</title>
+    <title>l.t.tl - the littlest URL shortener</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -88,7 +88,7 @@
           <li><a href="#api">API</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <h3 class="muted">nsf.works</h3>
+        <h3 class="muted">l.t.tl</h3>
       </div>
 
       <hr>
@@ -98,13 +98,13 @@
   <div class="form-group">
     <input type="text" class="form-control" id="longUrl" placeholder="Paste a long URL here to shorten it">
   </div>
-  <button class="btn btn-large" id="shorten">Shorten, bitch</button>
+  <button class="btn btn-large" id="shorten">Make it short</button>
 </form>
       </div></div>
 
 	  <div class="row-fluid bg-info" id="success">
 			<h3 class="muted center-block" style="width:100%;text-align:center;padding:10px;">
-			http://nsf.works/<span id="shortUrl"></span>
+			http://l.t.tl/<span id="shortUrl"></span>
 			</h3>
 	  </div>
 	  
@@ -116,10 +116,10 @@
       <div class="row-fluid marketing" id="api">
         <div class="span6">
           <h4>API Access</h4>
-          <p>nsf.works offers a simple JSON-based API for creating short URLs and for retrieving the information attached to them.</p>
+          <p>l.t.tl offers a simple JSON-based API for creating short URLs and for retrieving the information attached to them.</p>
 
           <h4 class="muted">Creating a short URL</h4>
-          <p>To create a short URL, send a request to <code>http://nsf.works/api/new?url=<strong>http://example.com</strong></code>. In response, you will get a JSON string in this format:</p>
+          <p>To create a short URL, send a request to <code>http://l.t.tl/api/new?url=<strong>http://example.com</strong></code>. In response, you will get a JSON string in this format:</p>
 <pre>
 {
 	"id":"1l",
@@ -129,7 +129,7 @@
 		  <p>If there is an error, you will get a JSON object with the element "status" set to false.</p>
 
           <h4 class="muted">Getting info about short URLs</h4>
-          <p>To resolve a short URL into the long URL it was created with, a request to <code>http://nsf.works/api/get?id=<strong>short-id</strong></code> will do the trick, where <strong>short-id</strong> is the portion of the short URL after the forward slash. A successful request will look like this:</p>
+          <p>To resolve a short URL into the long URL it was created with, a request to <code>http://l.t.tl/api/get?id=<strong>short-id</strong></code> will do the trick, where <strong>short-id</strong> is the portion of the short URL after the forward slash. A successful request will look like this:</p>
 <pre>
 {
 	"url":"http://example.com/",
@@ -149,7 +149,7 @@
       <hr>
 
       <div class="footer">
-        <p>&copy;2014 u</p>
+        <p>&copy;2014 <a href="http://chary.us/">chary.us</a></p>
       </div>
 
     </div> <!-- /container -->
