@@ -5,8 +5,11 @@ require './shorturls.rb'
 require 'yaml'
 require 'json'
 
+# cache index.html in memory for speed
+index = File.open('index.html').read()
+
 get '/' do
-	send_file 'index.html'
+	index
 end
 
 config = YAML::load_file( 'config.yaml' )
