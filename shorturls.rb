@@ -23,7 +23,7 @@ class ShortUrls
 	# string format.
 	def put( url )
 		# firstly validate the url
-		unless url =~ /\A#{URI::regexp(['http', 'https'])}\z/
+		unless url =~ /\A#{URI.regexp(['http', 'https'])}\z/
 			return false
 		end
 		# check to see if it already exists in db to prevent dupes
