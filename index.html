@@ -23,6 +23,7 @@
 						  $('#success').select();
 					} else {
 						$('#invalidUrl').slideDown(100);
+						$('#errorText').html(data['msg']);
 					}
 				});
 			});
@@ -109,7 +110,7 @@
 	  
 	<div class="alert alert-danger alert-dismissible" role="alert" id="invalidUrl">
 	  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-	  <strong>Error:</strong> The URL you entered was not valid.
+	  <strong>Error:</strong> <span id="errorText">The URL you entered was not valid.</span>
 	</div>
 
       <div class="row-fluid marketing" id="api">

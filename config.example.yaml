@@ -1,1 +1,4 @@
 db: "postgres://user:password@host/database"
+banned_keywords:
+  - "http://example.com"
+  - "https://example.com"
