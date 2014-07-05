@@ -6,7 +6,6 @@ require 'base64'
 require 'uri'
 # This is the main ShortUrls class.
 class ShortUrls
-
 	# Initialize database connection and create pointer to ShortUrls
 	# table.
 	# @param connection [String] A Sequel connection string.
